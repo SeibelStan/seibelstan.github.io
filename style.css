@@ -29,6 +29,12 @@ h3 {
     font-size: 1em;
 }
 
+.ava {
+    height: 128px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
 img {
     max-width: 100%;
 }
