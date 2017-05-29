@@ -6,7 +6,7 @@
 body {
     background: #fff;
     font: normal 17px/1.5 serif;
-    color: #4c4c4c;
+    color: #333;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
@@ -14,13 +14,13 @@ h1, h2, h3 {
     font-family: sans-serif;
 }
 h1 {
-    color: #1a1a1a;
+    color: #111;
     font-size: 2.5em;
     font-weight: 600;
     margin-bottom: .5rem;
 }
 h2, h3 {
-    color: #262626;
+    color: #222;
     font-size: 2em;
     line-height: 35px;
     margin: .5em 0;
