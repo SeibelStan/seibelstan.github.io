@@ -5,22 +5,24 @@
 
 body {
     background: #fff;
-    font: normal 17px/1.5 serif;
-    color: #333;
+    font: normal 15px/1.5 Helvetica;
+    color: #222;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+}
+body.invert {
+    background: #222;
+    color: #bbb;
 }
 h1, h2, h3 {
     font-family: sans-serif;
 }
 h1 {
-    color: #111;
     font-size: 2.5em;
     font-weight: 600;
     margin-bottom: .5rem;
 }
 h2, h3 {
-    color: #222;
     font-size: 2em;
     line-height: 35px;
     margin: .5em 0;
@@ -33,6 +35,10 @@ h3 {
     height: 128px;
     margin-right: 10px;
     vertical-align: middle;
+    cursor: pointer;
+}
+.invert .ava {
+    filter: invert();
 }
 
 img {
@@ -40,7 +46,10 @@ img {
 }
 
 a {
-    color: inherit;
+    color: darkgreen;
+}
+.invert a {
+    color: darkseagreen;
 }
 
 .container {
