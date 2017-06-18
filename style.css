@@ -37,19 +37,13 @@ h3 {
     vertical-align: middle;
     cursor: pointer;
 }
-.invert .ava {
-    filter: invert();
-}
 
 img {
     max-width: 100%;
 }
 
 a {
-    color: darkgreen;
-}
-.invert a {
-    color: darkseagreen;
+    color: #0054b9;
 }
 
 .container {
