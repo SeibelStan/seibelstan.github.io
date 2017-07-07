@@ -6,7 +6,7 @@ function qs(selector) {
 }
 
 q('body').onload = function () {
-    qs('.spoiler-toggle').forEach.call(function(el, i) {
+    qs('.spoiler-toggle').forEach(function(el, i) {
         el.onclick = function () {
             el.parentNode.classList.toggle('active');
         }
