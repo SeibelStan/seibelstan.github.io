@@ -13,7 +13,7 @@ a {
     cursor: pointer;
     text-decoration: underline;
 }
-a:hover {
+a:hover, .spoiler-toggle:hover {
     color: #E95420;
 }
 h1, h2, h3 {
@@ -73,11 +73,7 @@ p, ul, ol {
 }
 
 footer {
-    color: #AEA79F;
     text-align: center;
-}
-footer > * {
-    color: inherit;
 }
 
 section:not(.active) .spoiler-body {
