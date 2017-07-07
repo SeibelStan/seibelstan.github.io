@@ -26,9 +26,10 @@ h1 {
     color: #333;
 }
 h2, h3 {
-    font-size: 2em;
-    line-height: 35px;
+    font-size: 1em;
     margin: .5em 0;
+}
+h2 {
     color: #772953;
 }
 h3 {
@@ -37,8 +38,6 @@ h3 {
 
 .ava {
     height: 128px;
-    margin-right: 10px;
-    vertical-align: middle;
 }
 
 img {
@@ -48,7 +47,7 @@ img {
 .container {
     max-width: 660px;
     margin: 0 auto;
-    padding: 1em;
+    padding: 1em 1em 0;
 }
 
 ul, ol {
@@ -66,6 +65,12 @@ p, ul, ol {
 .p-nobr > * {
     white-space: nowrap;
 }
+.tac {
+    text-align: center;
+}
+.nm {
+    margin: 0;
+}
 
 footer {
     color: #AEA79F;
@@ -73,6 +78,28 @@ footer {
 }
 footer > * {
     color: inherit;
+}
+
+section:not(.active) .spoiler-body {
+    display: none;
+}
+.spoiler-toggle {
+    cursor: pointer;
+}
+.spoiler-toggle::before {
+    transition: .25s ease;
+    content: '▶';
+    margin-right: .5em;
+    transform: rotate(0deg);
+    display: inline-block;
+}
+section.active .spoiler-toggle::before {
+    transform: rotate(90deg);
+}
+.spoilers-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (max-width: 550px) {
