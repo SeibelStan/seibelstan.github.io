@@ -8,7 +8,16 @@ function qs(selector) {
 q('body').onload = function () {
     qs('.spoiler-toggle').forEach(function(el, i) {
         el.onclick = function () {
-            el.parentNode.classList.toggle('active');
+            var cont = el.parentNode;
+            var contActive = cont.classList.contains('active');
+
+            qs('.spoilers section').forEach(function(el, i) {
+                el.classList.remove('active');
+            });
+
+            if(!contActive) {
+                cont.classList.add('active');
+            }
         }
     });
 }
