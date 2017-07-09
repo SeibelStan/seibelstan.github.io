@@ -5,7 +5,7 @@
 
 body {
     background: #fff;
-    font: normal 16px/1.5 Helvetica;
+    font: normal 16px/1.5 Helvetica, sans-serif;
     color: #333;
 }
 a {
@@ -16,22 +16,14 @@ a {
 a:hover, .spoiler-toggle:hover {
     color: #E95420;
 }
-h1, h2, h3 {
-    font-family: sans-serif;
-}
 h1 {
     font-size: 1.9em;
     font-weight: 400;
     margin-bottom: .5rem;
-    color: #333;
 }
 h2, h3 {
     font-size: 1em;
     margin: .5em 0;
-}
-
-.ava {
-    height: 128px;
 }
 
 img {
@@ -54,19 +46,11 @@ h1 {
 
 p, ul, ol {
     margin-bottom: .5em;
-    color: #000;
 }
 .p-nobr > * {
     white-space: nowrap;
 }
 .tac {
-    text-align: center;
-}
-.nm {
-    margin: 0;
-}
-
-footer {
     text-align: center;
 }
 
