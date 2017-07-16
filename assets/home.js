@@ -4,20 +4,26 @@ function q(selector) {
 function qs(selector) {
     return document.querySelectorAll(selector);
 }
+function nh(data) {
+    return data.replace(/#/, '');
+}
 
 q('body').onload = function () {
-    qs('.spoiler-toggle').forEach(function(el, i) {
-        el.onclick = function () {
-            var cont = el.parentNode;
+    qs('header nav a').forEach(function(el, i) {
+        el.onclick = function (event) {
+            var href = el.getAttribute('href');
+            var cont = q('[data-content="' + nh(href) + '"]');
             var contActive = cont.classList.contains('active');
 
-            qs('.spoilers section').forEach(function(el, i) {
+            qs('section, header nav a').forEach(function(el, i) {
                 el.classList.remove('active');
             });
 
-            if(!contActive) {
-                cont.classList.add('active');
-            }
+            cont.classList.add('active');
+            el.classList.add('active');
         }
     });
+    if(location.hash) {
+        q('[href="' + location.hash + '"]').click();
+    }
 }

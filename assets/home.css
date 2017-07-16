@@ -2,76 +2,90 @@
     margin: 0;
     padding: 0;
 }
+img {
+    max-width: 100%;
+}
 
+body, html {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
 body {
     background: #fff;
     font: normal 16px/1.5 Helvetica, sans-serif;
-    color: #333;
+    color: #1e2327;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+.container {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+section:not(.active) {
+    display: none;
+}
+header {
+    background: #1e2327;
+}
+header nav {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    white-space: nowrap;
+}
+header a {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: .75rem .5rem;
+    color: #ddd;
+}
+
 a {
     color: #2980b9;
     cursor: pointer;
     text-decoration: underline;
 }
-a:hover, .spoiler-toggle:hover {
+a:hover, a.active {
     color: #E95420;
 }
 h1 {
+    margin: 0;
     font-size: 1.9em;
     font-weight: 400;
-    margin-bottom: .5rem;
 }
 h2, h3 {
     font-size: 1em;
-    margin: .5em 0;
+    margin: .75em 0;
 }
-
-img {
-    max-width: 100%;
-}
-
-.container {
-    max-width: 660px;
-    margin: 0 auto;
-    padding: 1em;
+h1 + h2, h1 + h3 {
+    margin-top: 0;
 }
 
 ul, ol {
     margin-left: 1em;
 }
-
-h1 {
-    margin: 0;
-}
-
 p, ul, ol {
     margin-bottom: .5em;
 }
+
 .p-nobr > * {
     white-space: nowrap;
 }
 .tac {
     text-align: center;
 }
-
-section:not(.active) .spoiler-body {
-    display: none;
-}
-.spoiler-toggle {
-    cursor: pointer;
-}
-.spoiler-toggle::before {
-    transition: .25s ease;
-    content: '▶';
-    margin-right: .5em;
-    transform: rotate(0deg);
-    display: inline-block;
-}
-section.active .spoiler-toggle::before {
-    transform: rotate(90deg);
-}
-.spoilers-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.ava {
+    max-width: 128px;
 }
