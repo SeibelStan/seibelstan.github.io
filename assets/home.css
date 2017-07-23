@@ -31,35 +31,39 @@ main {
 section:not(.active) {
     display: none;
 }
+a {
+    color: #2980b9;
+    cursor: pointer;
+    text-decoration: underline;
+}
+a:hover {
+    color: #E95420;
+}
+
 header {
-    background: #1e2327;
+    border-bottom: solid 1px #d1d5da;
+    display: flex;
+    justify-content: center;
 }
 header nav {
     padding-right: .5rem;
     padding-left: .5rem;
     -webkit-overflow-scrolling: touch;
     overflow-x: auto;
-    color: rgba(255,255,255,0.75);
-    text-align: center;
     white-space: nowrap;
+    display: flex;
 }
 header a {
+    border-bottom: 2px solid transparent;
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
-    display: inline-block;
     padding: .75rem .5rem;
-    color: #ddd;
+}
+header .active {
+    border-bottom-color: #E95420;
 }
 
-a {
-    color: #2980b9;
-    cursor: pointer;
-    text-decoration: underline;
-}
-a:hover, a.active {
-    color: #E95420;
-}
 h1 {
     margin: 0;
     font-size: 1.9em;
