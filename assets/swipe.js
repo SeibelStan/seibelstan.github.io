@@ -2,6 +2,7 @@ var clickX = 0;
 var clickY = 0;
 var pageX = 0;
 var pageY = 0;
+var deadZoneTop = 50;
 
 function dragTop() {
 }
@@ -50,6 +51,10 @@ function wMouseDown(e) {
 }
 
 function wMouseUp(e) {
+	if(e.pageY < deadZoneTop) {
+		return false;
+	}
+
 	if((e.pageX - clickX) > 100) {
 		dragLeft();
 	}
