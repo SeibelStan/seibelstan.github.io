@@ -88,6 +88,6 @@ p, ul, ol {
 
 @media(max-height: 600px) {
     section {
-        padding: 0 1rem 1rem;
+        padding: .5rem 1rem 1rem;
     }
 }
