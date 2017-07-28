@@ -1,6 +1,3 @@
-var screen = 0;
-var maxscreen;
-
 function q(selector) {
     return document.querySelector(selector);
 }
@@ -10,30 +7,28 @@ function qs(selector) {
 function nh(data) {
     return data.replace(/#/, '');
 }
+function toggle(el, set = true) {
+    el.classList.toggle('active', set);
+}
 
 function goScreen(screen) {
-	qs('section, header nav a').forEach(function(el, i) {
-		el.classList.remove('active');
+    if(!screen) {
+        screen = '#contacts';
+    }
+	qs('section, .tabs a').forEach(function(el, i) {
+		toggle(el, false);
 	});
 
-	q('[data-content="' + screen + '"]').classList.add('active');
-	q('[href="#' + screen + '"]').classList.add('active');
-	location.hash = screen;
+	toggle(q('[data-content="' + nh(screen) + '"]'));
+	toggle(q('[href="' + screen + '"]'));
 }
 
 q('body').onload = function () {
-    maxscreen = qs('header nav a').length;
-
-    qs('header nav a').forEach(function(el, i) {
+    qs('.tabs a').forEach(function(el, i) {
         el.onclick = function (event) {
-            screen = nh(el.getAttribute('href'));
-            goScreen(screen);
+            goScreen(el.getAttribute('href'));
         }
     });
 
-    if(location.hash) {
-        screen = nh(location.hash);
-        goScreen(screen);
-        q('[href="' + location.hash + '"]').click();
-    }
+    goScreen(location.hash);
 }
