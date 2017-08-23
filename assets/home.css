@@ -97,9 +97,3 @@ p, ul, ol {
 .qr:hover {
     background: #6089b4;
 }
-
-@media(max-height: 600px) {
-    section {
-        padding: .5rem 1rem 1rem;
-    }
-}
