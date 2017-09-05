@@ -23,12 +23,10 @@ function goScreen(screen) {
 	toggle(q('[href="' + screen + '"]'));
 }
 
-q('body').onload = function () {
-    qs('.tabs a').forEach(function(el, i) {
-        el.onclick = function (event) {
-            goScreen(el.getAttribute('href'));
-        }
-    });
+window.onhashchange = function () {
+    goScreen(location.hash);   
+}
 
+q('body').onload = function () {
     goScreen(location.hash);
 }
