@@ -66,11 +66,9 @@ main {
     padding: .75rem;
     font-size: 14px;
     text-decoration: none;
-    border-bottom: 1px solid transparent;
 }
 .tabs a.active {
     background: var(--bg-m);
-    border-bottom-color: #111111;
 }
 .tabs a.active, .tabs a:hover {
     color: var(--text-a);    
