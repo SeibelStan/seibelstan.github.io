@@ -70,7 +70,8 @@ header {
     top: 2px;
 }
 .tabs a.active {
-    border-color: var(--link-a);
+    color: var(--text-h);
+    border-color: var(--text-h);
 }
 h1, h2, h3 {
     color: var(--text-h);
