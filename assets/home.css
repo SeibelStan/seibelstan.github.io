@@ -6,9 +6,8 @@ html {
     --bg-m: #fff;
     --b-h: #eee;
     --lh-1: 20px;
-    --lh-05: 10px;
-    --lh-025: 5px;
-    --lh-2: 40px;
+    --lh-05: calc(var(--lh-1) / 2);
+    --lh-2: calc(var(--lh-1) * 2);
 }
 * {
     margin: 0;
