@@ -4,8 +4,8 @@ html {
     --text: #222;
     --text-h: #000;
     --bg-m: #fff;
-    --b-h: #eee;
-    --lh-1: 20px;
+    --br-h: #eee;
+    --lh-1: 24px;
     --lh-05: calc(var(--lh-1) / 2);
     --lh-2: calc(var(--lh-1) * 2);
 }
@@ -55,7 +55,7 @@ main {
     align-items: center;
 }
 header {
-    border-bottom: 2px solid var(--b-h);
+    border-bottom: 2px solid var(--br-h);
 }
 .tabs {
     white-space: nowrap;
@@ -107,7 +107,7 @@ p, ul, ol {
     text-align: center;
 }
 .qr {
-    border: 2px solid var(--b-h);
+    border: 2px solid var(--br-h);
     display: inline-block;
     padding: var(--lh-05);
 }
