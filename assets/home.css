@@ -112,3 +112,8 @@ p, ul, ol {
 *:last-child {
     margin-bottom: 0;
 }
+@media(max-width: 480px) {
+    .tabs a {
+        flex-grow: 1;
+    }
+}
