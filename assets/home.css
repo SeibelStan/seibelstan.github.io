@@ -1,9 +1,10 @@
 html {
-    --link: #9aa83a;
-    --link-a: #d0b344;
-    --text: #c5c8c6;
-    --text-a: #fff;
-    --bg-m: #1e1e1e;
+    --link: #333;
+    --link-a: darkolivegreen;
+    --text: #222;
+    --text-h: #000;
+    --bg-m: #fff;
+    --b-h: #eee;
 }
 * {
     margin: 0;
@@ -26,11 +27,8 @@ body {
     justify-content: space-between;
     min-height: 100vh;
 }
-header {
-    background: #272727;
-}
 .container {
-    max-width: 660px;
+    max-width: calc(80em * .5);
     margin: 0 auto;
 }
 section:not(.active) {
@@ -53,31 +51,29 @@ main {
     display: flex;
     align-items: center;
 }
+header {
+    border-bottom: 2px solid var(--b-h);
+}
 .tabs {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
     white-space: nowrap;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .tabs a {
     text-align: center;
-    background: #404040;
     color: var(--text);
-    padding: .75rem;
-    font-size: 14px;
+    padding: calc(.75em - 2px) calc(1em/3*2) .75em;
     text-decoration: none;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    top: 2px;
 }
 .tabs a.active {
-    background: var(--bg-m);
-}
-.tabs a.active, .tabs a:hover {
-    color: var(--text-a);    
-}
-.tabs > :not(:first-child) {
-    margin-left: 1px;
+    border-color: var(--link-a);
 }
 h1, h2, h3 {
-    color: var(--text-a);
+    color: var(--text-h);
 }
 h1 {
     font-size: 2em;
@@ -103,12 +99,12 @@ p, ul, ol {
     text-align: center;
 }
 .qr {
+    border: 2px solid var(--b-h);
     display: inline-block;
     padding: .5em;
-    background: var(--link);
 }
 .qr:hover {
-    background: var(--link-a);
+    border-color: var(--link-a);
 }
 *:first-child {
     margin-top: 0;
@@ -116,14 +112,3 @@ p, ul, ol {
 *:last-child {
     margin-bottom: 0;
 }
-
-@media (min-width: 561px) {
-    .tabs-container {
-        padding: 0 1em;
-    }
-}    
-/*@media (max-width: 560px) {*/
-    .tabs a {
-        flex-grow: 1;
-    }
-/*}*/
