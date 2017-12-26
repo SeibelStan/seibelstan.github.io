@@ -15,12 +15,12 @@ function goScreen(screen) {
     if(!screen) {
         screen = '#contacts';
     }
-	qs('section, .tabs a').forEach(function(el, i) {
-		toggle(el, false);
-	});
+    qs('section, .tabs a').forEach(function(el, i) {
+        toggle(el, false);
+    });
 
-	toggle(q('[data-content="' + nh(screen) + '"]'));
-	toggle(q('[href="' + screen + '"]'));
+    toggle(q('[data-content="' + nh(screen) + '"]'));
+    toggle(q('[href="' + screen + '"]'));
 }
 
 window.onhashchange = function () {
