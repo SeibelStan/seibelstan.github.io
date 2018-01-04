@@ -29,4 +29,7 @@ window.onhashchange = function () {
 
 q('body').onload = function () {
     goScreen(location.hash);
+    q('.moon').onclick = function () {
+        q('body').style.animation = 'unset';
+    }
 }

@@ -1,14 +1,19 @@
 html {
-    --link: #333;
-    --link-a: darkolivegreen;
-    --text: #222;
-    --text-h: #000;
+    --link: rgba(255,255,255,.75);
+    --link-a: rgba(255,255,255,1);
+    --text: rgba(255, 255, 255, .85);
+    --text-h: rgba(255, 255, 255, 1);
     --bg-m: #fff;
-    --br-h: #eee;
     --lh-1: 24px;
     --lh-05: calc(var(--lh-1) / 2);
     --lh-2: calc(var(--lh-1) * 2);
 }
+@keyframes bga {
+    0% { background: #101017; }
+    50% { background: #0277bd; }
+    100% { background: #101017; }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +27,8 @@ body, html {
     overflow-x: hidden;
 }
 body {
-    background: var(--bg-m);
+    background: #101017;
+    animation: bga 30s ease-in-out infinite;
     font: 16px/var(--lh-1) sans-serif;
     color: var(--text);
     display: flex;
@@ -54,9 +60,6 @@ main {
     display: flex;
     align-items: center;
 }
-header {
-    border-bottom: 2px solid var(--br-h);
-}
 .tabs {
     white-space: nowrap;
     display: flex;
@@ -68,16 +71,11 @@ header {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: var(--text);
     padding: 0 var(--lh-05);
     text-decoration: none;
-    border-bottom: 2px solid transparent;
-    position: relative;
-    top: 2px;
 }
 .tabs a.active {
-    color: var(--text-h);
-    border-color: var(--text-h);
+    color: var(--link-a);
 }
 h1, h2, h3 {
     color: var(--text-h);
@@ -107,19 +105,21 @@ p, ul, ol {
     text-align: center;
 }
 .qr {
-    border: 2px solid var(--br-h);
     display: inline-block;
     padding: var(--lh-05);
+    background: var(--text);
 }
-.qr:hover {
-    border-color: var(--link-a);
+.moon {
+    font-size: 2em;
 }
+
 *:first-child {
     margin-top: 0;
 }
 *:last-child {
     margin-bottom: 0;
 }
+
 @media(max-width: 480px) {
     .tabs a {
         flex-grow: 1;
