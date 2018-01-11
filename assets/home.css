@@ -34,7 +34,7 @@ main {
 section {
     hyphens: auto;
     display: flex;
-    padding: var(--lh);
+    padding: 1rem;
     flex-direction: column;
     justify-content: center;
 }
@@ -58,7 +58,7 @@ a:hover, a.active {
 .next a {
     text-decoration: none;
 }
-h1, h2, h3 {
+h1, h2 {
     color: var(--text-h);
 }
 h1 {
@@ -66,12 +66,9 @@ h1 {
     font-weight: 400;
     line-height: calc(var(--lh) * 2);
 }
-h2, h3 {
+h2 {
     font-size: 1em;
     margin: 1rem 0 .5rem;
-}
-h1 + h2, h1 + h3 {
-    margin-top: 0;
 }
 ul, ol {
     margin-left: 1.5em;
