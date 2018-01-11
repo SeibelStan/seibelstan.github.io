@@ -76,16 +76,11 @@ ul, ol {
 p, ul, ol {
     margin-bottom: 1rem;
 }
-.p-nobr > * {
+.chib > * {
     white-space: nowrap;
 }
 .tac {
     text-align: center;
-}
-.qr {
-    padding: 1rem;
-    display: inline-block;
-    border: 1px dotted var(--link);
 }
 
 *:first-child {
