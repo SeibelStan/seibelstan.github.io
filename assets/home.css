@@ -52,11 +52,16 @@ a {
 a:hover, a.active {
     color: var(--link-a);
 }
+a[href^="#"] {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
 .next {
     font-size: 2em;
 }
 .next a {
     text-decoration: none;
+    border: none;
 }
 h1, h2 {
     color: var(--text-h);
@@ -74,10 +79,13 @@ ul, ol {
     margin-left: 1.5em;
 }
 p, ul, ol {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
+}
+li {
+    margin-bottom: .25rem;
 }
 .chib > * {
-    white-space: nowrap;
+    display: inline-block;
 }
 .tac {
     text-align: center;
