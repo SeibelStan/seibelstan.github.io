@@ -46,7 +46,6 @@ section {
     margin: 0 auto;
 }
 a {
-    cursor: pointer;
     color: var(--link);
 }
 a:hover, a.active {
