@@ -45,7 +45,7 @@ main {
 section {
     hyphens: auto;
     display: flex;
-    padding: .5rem;
+    padding: 1rem .5rem;
     flex-direction: column;
     justify-content: center;
 }
