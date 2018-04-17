@@ -7,6 +7,14 @@ html {
     --lh:       22px;
 }
 
+html.dark {
+    --link:   rgba(255, 255, 255, .75);
+    --link-a: rgba(255, 255, 255, 1);
+    --text:   rgba(255, 255, 255, .85);
+    --text-h: rgba(255, 255, 255, 1);
+    --bg-m:   #111;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +34,9 @@ body {
     background: var(--bg-m);
     font-family: Helvetica, sans-serif;
 }
+body.monospace {
+    font-family: monospace;
+}
 main {
     flex-grow: 1;
     display: flex;
@@ -34,7 +45,7 @@ main {
 section {
     hyphens: auto;
     display: flex;
-    padding: 1rem;
+    padding: .5rem;
     flex-direction: column;
     justify-content: center;
 }
@@ -42,7 +53,8 @@ section {
     min-height: 100vh;
 }
 .container {
-    max-width: 40em;
+    padding: 1em;
+    max-width: 45em;
     margin: 0 auto;
 }
 a {
@@ -95,4 +107,20 @@ li {
 }
 *:last-child {
     margin-bottom: 0;
+}
+
+.qr {
+    display: inline-block;
+    padding: .5rem;
+}
+.dark .qr {
+    background: #fff;
+}
+
+.tools {
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+.tools > * {
+    cursor: pointer;
 }
