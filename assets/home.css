@@ -1,18 +1,18 @@
 html {
-    --link:   rgba(0, 0, 0, .75);
+    --link: rgba(0, 0, 0, .75);
     --link-a: rgba(0, 0, 0, 1);
-    --text:   rgba(0, 0, 0, .85);
+    --text: rgba(0, 0, 0, .85);
     --text-h: rgba(0, 0, 0, 1);
-    --bg-m:   #fff;
-    --lh:       22px;
+    --bg-m: #fff;
+    --lh: 22px;
 }
 
 html.dark {
-    --link:   rgba(255, 255, 255, .75);
+    --link: rgba(255, 255, 255, .75);
     --link-a: rgba(255, 255, 255, 1);
-    --text:   rgba(255, 255, 255, .85);
+    --text: rgba(255, 255, 255, .85);
     --text-h: rgba(255, 255, 255, 1);
-    --bg-m:   #111;
+    --bg-m: #111;
 }
 
 * {
@@ -20,13 +20,16 @@ html.dark {
     padding: 0;
     box-sizing: border-box;
 }
+
 img {
     max-width: 100%;
 }
+
 body, html {
     max-width: 100vw;
     overflow-x: hidden;
 }
+
 body {
     font-size: 14px;
     color: var(--text);
@@ -34,14 +37,17 @@ body {
     background: var(--bg-m);
     font-family: Helvetica, sans-serif;
 }
+
 body.monospace {
     font-family: monospace;
 }
+
 main {
     flex-grow: 1;
     display: flex;
     align-items: center;
 }
+
 section {
     hyphens: auto;
     display: flex;
@@ -49,69 +55,78 @@ section {
     flex-direction: column;
     justify-content: center;
 }
+
 #contacts {
     min-height: 100vh;
 }
+
 .container {
     max-width: 45em;
     margin: 0 auto;
 }
+
 a {
     color: var(--link);
 }
+
 a:hover, a.active {
     color: var(--link-a);
 }
+
 a[href^="#"] {
     text-decoration: none;
     border-bottom: 1px dotted;
 }
+
 .next {
     font-size: 2em;
 }
+
 .next a {
     text-decoration: none;
     border: none;
 }
+
 h1, h2 {
     color: var(--text-h);
 }
+
 h1 {
     font-size: 2em;
     font-weight: 400;
     line-height: calc(var(--lh) * 2);
 }
+
 h2 {
     font-size: 1em;
     margin: 1rem 0 .5rem;
 }
+
 ul, ol {
     margin-left: 1.5em;
 }
+
 p, ul, ol {
     margin-bottom: .5rem;
 }
+
 li {
     margin-bottom: .25rem;
 }
-.chib > * {
+
+.chib>* {
     display: inline-block;
 }
+
 .tac {
     text-align: center;
-}
-
-*:first-child {
-    margin-top: 0;
-}
-*:last-child {
-    margin-bottom: 0;
 }
 
 .qr {
     display: inline-block;
     padding: .5rem;
 }
+
 .dark .qr {
     background: #fff;
 }
@@ -120,6 +135,15 @@ li {
     font-size: 2em;
     margin-bottom: 1rem;
 }
-.tools > * {
+
+.tools>* {
     cursor: pointer;
+}
+
+*:first-child {
+    margin-top: 0;
+}
+
+*:last-child {
+    margin-bottom: 0;
 }
