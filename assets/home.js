@@ -1,5 +1,6 @@
 var html = document.querySelector('html');
 var body = document.querySelector('body');
+var style = document.querySelector('[rel="stylesheet"]');
 var hours = new Date().getHours();
 
 document.querySelector('.bulb').onclick = function () {
@@ -12,13 +13,13 @@ document.querySelector('.bulb').onclick = function () {
     }
 }
 
-document.querySelector('.font').onclick = function () {
-    var scope = body;
-    if(!scope.getAttribute('class')) {
-        scope.setAttribute('class', 'monospace');
+document.querySelector('.boom').onclick = function () {
+    var scope = style;
+    if(scope.getAttribute('disabled')) {
+        scope.removeAttribute('disabled');
     }
     else {
-        scope.setAttribute('class', '');
+        scope.setAttribute('disabled', true);
     }
 }
 
@@ -27,5 +28,5 @@ if(hours <= 9 || hours >= 22) {
 }
 
 if(hours == 14) {
-    body.setAttribute('class', 'monospace');
+    style.setAttribute('disabled', true);
 }
