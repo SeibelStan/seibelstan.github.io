@@ -15,11 +15,11 @@ document.querySelector('.bulb').onclick = function () {
 
 document.querySelector('.boom').onclick = function () {
     var scope = style;
-    if(scope.getAttribute('disabled')) {
-        scope.removeAttribute('disabled');
+    if(!scope.getAttribute('rel')) {
+        scope.setAttribute('rel', 'stylesheet');
     }
     else {
-        scope.setAttribute('disabled', true);
+        scope.setAttribute('rel', '');
     }
 }
 
@@ -28,5 +28,5 @@ if(hours <= 9 || hours >= 22) {
 }
 
 if(hours == 14) {
-    style.setAttribute('disabled', true);
+    style.setAttribute('rel', '');
 }
