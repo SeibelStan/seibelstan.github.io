@@ -27,6 +27,6 @@ if(hours <= 9 || hours >= 22) {
     html.setAttribute('class', 'dark');
 }
 
-if(hours == 14) {
+if(Math.random() < 0.05) {
     style.setAttribute('rel', '');
 }

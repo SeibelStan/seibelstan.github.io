@@ -60,11 +60,6 @@ section {
     min-height: 100vh;
 }
 
-.container {
-    max-width: 45em;
-    margin: 0 auto;
-}
-
 a {
     color: var(--link);
 }
