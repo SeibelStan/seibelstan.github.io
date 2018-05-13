@@ -38,9 +38,10 @@ main {
     flex-grow: 1;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
-section {
+section, footer {
     hyphens: auto;
     display: flex;
     padding: 1rem;
@@ -81,10 +82,11 @@ a:hover, a.active {
 
 h1, h2 {
     color: var(--text-h);
+    font-family: sans-serif;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 400;
     line-height: 1;
 }
@@ -106,8 +108,8 @@ li {
     margin-bottom: .25rem;
 }
 
-.chib>* {
-    display: inline-block;
+.nw > * {
+    white-space: nowrap;
 }
 
 .qr {
