@@ -120,16 +120,6 @@ p a, p span {
     color: red;
 }
 
-body::before {
-    content: '';
-    position: fixed;
-    top: 20%;
-    left: 0;
-    right: 0;
-    border-bottom: 1px solid #f5f5f5;
-    z-index: -1;
-}
-
 *:first-child {
     margin-top: 0;
 }
