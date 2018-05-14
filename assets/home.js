@@ -18,8 +18,8 @@ window.onhashchange = function () {
     renav();
 }
 
-window.onscroll = function() {
-    var el = document.elementFromPoint(window.innerWidth / 2, window.innerHeight / 10);
+function scroll() {
+    var el = document.elementFromPoint(window.innerWidth / 2, window.innerHeight / 5);
 
     if(!el) {
         return false;
@@ -45,5 +45,9 @@ window.onscroll = function() {
 
     renav();
 }
+
+document.addEventListener("touchmove", scroll, false);
+document.addEventListener("scroll", scroll, false);
+document.addEventListener("mousewheel", scroll, false);
 
 renav();
