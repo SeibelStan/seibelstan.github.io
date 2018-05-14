@@ -47,6 +47,13 @@ section, footer {
     padding: 1rem;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    transition: .5s ease;
+    border-left: 2px solid transparent;
+}
+
+.naved {
+    border-left-color: #f0f0f0;
 }
 
 .tac {
@@ -108,7 +115,7 @@ li {
     margin-bottom: .25rem;
 }
 
-.nw > * {
+p a, p span {
     white-space: nowrap;
 }
 
