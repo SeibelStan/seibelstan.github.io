@@ -3,7 +3,7 @@ function q(s) {
 }
 
 function renav() {
-    if(!location.hash || location.hash == '#contacts') {
+    if(!location.hash) {
         return false;
     }
 
