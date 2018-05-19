@@ -113,13 +113,6 @@ p a, p span {
     border: none;
 }
 
-.naved h1::first-letter,
-.naved h2::first-letter,
-.naved p::first-letter,
-.naved li::first-letter {
-    color: red;
-}
-
 *:first-child {
     margin-top: 0;
 }
