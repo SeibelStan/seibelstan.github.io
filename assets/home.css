@@ -86,7 +86,7 @@ li {
     margin-bottom: .25rem;
 }
 
-p a, p span {
+p > * {
     white-space: nowrap;
 }
 
