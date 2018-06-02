@@ -113,6 +113,14 @@ p > * {
     border: none;
 }
 
+.spoiler.hide > * {
+    display: none;
+}
+
+.spoiler .reveal {
+    display: block;
+}
+
 *:first-child {
     margin-top: 0;
 }
