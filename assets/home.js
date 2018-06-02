@@ -8,10 +8,10 @@ function qs(s) {
 
 [].forEach.call(qs('.spoiler'), function (el) {
     el.classList.add('hide');
-    el.innerHTML += '<a href="#" class="reveal">' + (el.getAttribute('data-reveal') || 'More') + '</a>';
+    el.innerHTML += '<a href="#" class="more">' + (el.getAttribute('data-more') || 'More') + '</a>';
 });
 
-[].forEach.call(qs('.reveal'), function (el) {
+[].forEach.call(qs('.more'), function (el) {
     el.onclick = function () {
         this.parentNode.classList.remove('hide');
         this.remove();
