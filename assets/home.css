@@ -43,11 +43,15 @@ main {
 
 section, footer {
     hyphens: auto;
-    display: flex;
     padding: 1rem;
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
+}
+
+#contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 a {
@@ -78,7 +82,7 @@ ul, ol {
     margin-left: 1.5em;
 }
 
-p, ul, ol {
+p, ul, ol, .spoiler {
     margin-bottom: .5rem;
 }
 
