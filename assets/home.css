@@ -41,10 +41,15 @@ main {
     flex-direction: column;
 }
 
-section, footer {
+section, footer, .nav {
     hyphens: auto;
     padding: 1rem;
     width: 100%;
+}
+
+.nav {
+    position: absolute;
+    text-align: right;
 }
 
 #contacts {
