@@ -21,7 +21,6 @@
 
     function gen(word1, word2, len = 16) {
         var len = len ? len : 16;
-        var pay = word1 + word2;
         var res = btoa(MD5(word1 + word2));
 
         res = res.slice(0, len);
