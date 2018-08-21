@@ -35,23 +35,15 @@
         }
     });
 
-    /*
-    var key = 'Hidevoice';
-    console.log(gen('Google', key));
-    console.log(gen('Yandex', key));
-    console.log(gen('Dropbox', key));
-    console.log(gen('Gmail', key));
-    console.log(gen('Vkontakte', key));
-
-    console.log('---');
-
-    var key = 'Rgb2Xray';
-    console.log(gen('Google', key));
-    console.log(gen('Yandex', key));
-    console.log(gen('Dropbox', key));
-    console.log(gen('Gmail', key));
-    console.log(gen('Vkontakte', key));
-    */
+    ['Sanctuary', 'Rgb2Xray', 'ss1122'].forEach(function (key) {
+        console.log('---' + key);
+        console.log(gen('Google', key));
+        console.log(gen('Yandex', key));
+        console.log(gen('Dropbox', key));
+        console.log(gen('Gmail', key));
+        console.log(gen('Vkontakte', key));
+        console.log(gen('Facebook', key));
+    });
 </script>
 
 <style>
