@@ -22,12 +22,10 @@
         var pay = word1 + word2;
         var res = pay;
 
-        for (var i = 0; i < 8; i++) {
-            res = btoa(res);
+        for(var i = 0; i < 8; i++) {
+            res = btoa(res).split('').reverse().join('').slice(-len);
         }
 
-        res = res.slice(pay.length, res.length);
-        res = res.slice(0, len);
         return res;
     }
 
@@ -36,6 +34,12 @@
             password.value = gen(domain.value, keyword.value, hashlen.value);
         }
     });
+
+    console.log(gen('Google', 'Rgb2Xray'));
+    console.log(gen('Yandex', 'Rgb2Xray'));
+    console.log(gen('Dropbox', 'Rgb2Xray'));
+    console.log(gen('Gmail', 'Rgb2Xray'));
+    console.log(gen('Vkontakte', 'Rgb2Xray'));
 </script>
 
 <style>
