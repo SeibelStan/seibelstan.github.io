@@ -22,7 +22,7 @@
         var pay = word1 + word2;
         var res = pay;
 
-        for(var i = 0; i < 8; i++) {
+        for(var i = 0; i < word2.length; i++) {
             res = btoa(res).split('').reverse().join('').slice(-len);
         }
 
@@ -34,6 +34,24 @@
             password.value = gen(domain.value, keyword.value, hashlen.value);
         }
     });
+
+    /*
+    var key = 'Hidevoice';
+    console.log(gen('Google', key));
+    console.log(gen('Yandex', key));
+    console.log(gen('Dropbox', key));
+    console.log(gen('Gmail', key));
+    console.log(gen('Vkontakte', key));
+
+    console.log('---');
+
+    var key = 'Rgb2Xray';
+    console.log(gen('Google', key));
+    console.log(gen('Yandex', key));
+    console.log(gen('Dropbox', key));
+    console.log(gen('Gmail', key));
+    console.log(gen('Vkontakte', key));
+    */
 </script>
 
 <style>
