@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>base64^8(dom+key)</title>
+    <title>Pass Geny v2</title>
 </head>
 
 <body>
@@ -17,19 +17,23 @@
 </body>
 
 <script>
-    function gen() {
-        var len = parseInt(hashlen.value) ? hashlen.value : 32;
-        var res = domain.value + keyword.value;
+    function gen(word1, word2, len = 32) {
+        var len = len ? len : 32;
+        var pay = word1 + word2;
+        var res = pay;
 
         for (var i = 0; i < 8; i++) {
             res = btoa(res);
         }
-        password.value = res.replace(/=/, '').slice(-len);
+
+        res = res.slice(pay.length, res.length);
+        res = res.slice(0, len);
+        return res;
     }
 
     document.querySelectorAll('input').forEach(function (el) {
         el.onkeyup = function () {
-            gen();
+            password.value = gen(domain.value, keyword.value, hashlen.value);
         }
     });
 </script>
@@ -42,7 +46,6 @@
         align-items: center;
     }
 
-    body,
     input,
     textarea {
         font-family: monospace;
