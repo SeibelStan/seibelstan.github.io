@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>base64^8(dom+key)</title>
+</head>
+
+<body>
+    <div>
+        <p><input type="text" id="domain" placeholder="Domain (ex: Google)" autofocus></p>
+        <p><input type="text" id="keyword" placeholder="Keyword (ex: Reich)"></p>
+        <p><textarea type="text" id="password" placeholder="Result password"></textarea></p>
+        <br>
+        <p><input type="number" id="hashlen" placeholder="Length (default: 32)" maxlength="2"></p>
+    </div>
+</body>
+
+<script>
+    function gen() {
+        var len = parseInt(hashlen.value) ? hashlen.value : 32;
+        var res = domain.value + keyword.value;
+
+        for (var i = 0; i < 8; i++) {
+            res = btoa(res);
+        }
+        password.value = res.replace(/=/, '').slice(-len);
+    }
+
+    document.querySelectorAll('input').forEach(function (el) {
+        el.onkeyup = function () {
+            gen();
+        }
+    });
+</script>
+
+<style>
+    body {
+        display: flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body,
+    input,
+    textarea {
+        font-family: monospace;
+        font-size: 4vmin;
+    }
+
+    input, textarea {
+        padding: 1em;
+    }
+</style>
+
+</html>
