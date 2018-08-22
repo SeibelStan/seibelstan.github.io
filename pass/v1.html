@@ -32,6 +32,12 @@
             password.value = gen(domain.value, keyword.value, hashlen.value);
         }
     });
+
+    password.onclick = function () {
+        this.focus();
+        this.select();
+        document.execCommand('copy');
+    }
 </script>
 
 <style>
@@ -46,7 +52,7 @@
     textarea {
         font-family: monospace;
         font-size: 4vmin;
-        width: 21em;
+        width: 18em;
         max-width: 75vw;
         line-height: 1;
         padding: .75em;
