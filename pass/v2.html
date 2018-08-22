@@ -2,8 +2,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>Pass Geny v2</title>
+    <meta name="viewport" content="width=device-width">
+    <title>sha256(dom+key)</title>
 </head>
 
 <body>
@@ -12,37 +12,37 @@
         <p><input type="text" id="keyword" placeholder="Keyword (ex: Reich)"></p>
         <p><textarea type="text" id="password" placeholder="Result password"></textarea></p>
         <br>
-        <p><input type="number" id="hashlen" placeholder="Length (default: 32)" maxlength="2"></p>
+        <p><input type="number" id="hashlen" placeholder="Length (default: 64)" maxlength="2"></p>
     </div>
 </body>
 
 <script>
-    function gen(word1, word2, len = 32) {
-        var len = len ? len : 32;
-        var pay = word1 + word2;
-        var res = pay;
-
-        for(var i = 0; i < word2.length; i++) {
-            res = btoa(res).split('').reverse().join('').slice(-len);
+    function hex(buffer) {
+        var hexCodes = [];
+        var view = new DataView(buffer);
+        for (var i = 0; i < view.byteLength; i += 4) {
+            var value = view.getUint32(i)
+            var stringValue = value.toString(16)
+            var padding = '00000000'
+            var paddedValue = (padding + stringValue).slice(-padding.length)
+            hexCodes.push(paddedValue);
         }
+        return hexCodes.join("");
+    }
 
-        return res;
+    async function sha256(str, len = 64) {
+        len = hashlen.value ? hashlen.value : 64;
+        const msgBuffer = new TextEncoder('utf-8').encode(str);
+        const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        const hashHex = hashArray.map(b => ('00' + b.toString(16)).slice(-2)).join('');
+        return hashHex.slice(0, len);
     }
 
     document.querySelectorAll('input').forEach(function (el) {
-        el.onkeyup = function () {
-            password.value = gen(domain.value, keyword.value, hashlen.value);
+        el.onkeyup = async function() {
+            password.value = await sha256(domain.value + keyword.value, hashlen.value);
         }
-    });
-
-    ['Sanctuary', 'Rgb2Xray', 'ss1122'].forEach(function (key) {
-        console.log('---' + key);
-        console.log(gen('Google', key));
-        console.log(gen('Yandex', key));
-        console.log(gen('Dropbox', key));
-        console.log(gen('Gmail', key));
-        console.log(gen('Vkontakte', key));
-        console.log(gen('Facebook', key));
     });
 </script>
 
@@ -58,10 +58,12 @@
     textarea {
         font-family: monospace;
         font-size: 4vmin;
+        line-height: 1;
+        padding: 1em;
     }
 
-    input, textarea {
-        padding: 1em;
+    textarea {
+        height: 5.25em;
     }
 </style>
 
