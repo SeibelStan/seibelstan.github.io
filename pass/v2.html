@@ -40,7 +40,7 @@
     }
 
     document.querySelectorAll('input').forEach(function (el) {
-        el.onkeyup = async function() {
+        el.onkeyup = async function () {
             password.value = await sha256(domain.value + keyword.value, hashlen.value);
         }
     });
@@ -58,12 +58,13 @@
     textarea {
         font-family: monospace;
         font-size: 4vmin;
+        width: 62vmin;
         line-height: 1;
-        padding: .5em;
+        padding: .75em;
     }
 
     textarea {
-        height: 5em;
+        height: 4.6em;
     }
 </style>
 
