@@ -18,22 +18,22 @@
 
 <body>
 
-    <pre>
+<pre>
 {
     "person": {
-        "firstname": "Stanislaus"
+        "firstname": "Stanislaus",
         "lastname": "Seibel",
         "location": "Kazakhstan",
         "specialty": "Web Developer",
         "bio": "Programming since 2008, in web development since 2013. Specialize in backend and business logic."
-    }
+    },
     "contacts": {
         "emails": [
-            "seibel.stan@yandex.com"
-            "seibel.stan@gmail.com",
+            "seibel.stan@yandex.com",
+            "seibel.stan@gmail.com"
         ],
         "telegram": "https://t.me/SeibelStan",
-        "github": "https://github.com/SeibelStan"
+        "github": "https://github.com/SeibelStan",
         "vcard": "./seibelstan.vcf"
     },
     "skills": {
@@ -47,15 +47,14 @@
             "Opencart", "Wordpress"
         ],
         "other": [
-            "amoCRM", "Comagic", "Sumsub KYC", "Telegram Bot API", "Payment systems",
-            "Linux, VPS, VDS", "Git", "Project management"
+            "amoCRM", "Comagic", "Sumsub KYC", "Telegram Bot API", "Payment systems", "Linux, VPS, VDS", "Git", "Project management"
         ]
     },
-    "projects": [
+    "projects": {
         "opensource": [
             "https://github.com/SeibelStan/mdlcms",
             "https://seibelstan.github.io/pass"
-        ]
+        ],
         "live": [
             "https://pik-arenda.ru",
             "https://ktrade.kz",
@@ -78,18 +77,22 @@
             "http://kupionline.kz",
             "http://temirlife.kz",
             "http://avline.kz"
-        ],
-        "lastmodified": "2019-05-10"
-    ]
+        ]
+    },
+    "lastmodified": "2019-06-05"
 }
 </pre>
 
 <script>
     document.body.innerHTML = document.body.innerHTML
+        .replace(/<*pre>/g, '')
+        .replace(/^(\s+)(".+?", .+?")$/gm, '$1<div class=valblock>$2</div>')
+        .replace(/^(.+?)$/gm, '<div class=line>$1</div>')
         .replace(/"(http.+?)*([\.\/]\/.+?)"/g, '"<a href=$1$2>$1$2</a>"')
-        .replace(/"(.+?)":/g, '&quot;<span class=key>$1</span>&quot;:')
-        .replace(/"(.+?)"/g, '&quot;<span class=value>$1</span>&quot;')
-        .replace(/ {4}/g, '<span class=tab></span>');
+        .replace(/"(.+?)":/g, '<span class=key><span class=quot>&quot;</span>$1<span class=quot>&quot;</span>:&nbsp;</span>')
+        .replace(/"(.+?)"(,*)/g, '<span class=value><span class=quot>&quot;</span>$1<span class=quot>&quot;</span>$2</span>')
+        .replace(/>,/g, '><span class=comma>,</span>')
+        .replace(/ {4}/g, '<span class=tab></span>')
 
 </script>
 

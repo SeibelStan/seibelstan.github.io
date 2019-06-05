@@ -1,28 +1,45 @@
 /* https://materialuicolors.co */
-pre {
-    line-height: 1.4;
-    white-space: pre-wrap;
+body {
+    background: #272822;
+    color: #fffffb;
+    font-family: monospace;
+    font-size: 15px;
+}
+.line {
+    display: flex;
+}
+.valblock {
+    display: inline-flex;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 .key {
-    color: #4E342E;
+    color: #a0e22d;
 }
 .value {
-    color: #2E7D32;
+    color: #e6db74;
 }
 .tab {
+    flex-shrink: 0;
     width: 2em;
     display: inline-block;
 }
+.comma {
+    margin-right: .25em;
+}
+.comma, .quot {
+    color: #fffffb;
+}
 
 a:link {
-    color: #1565C0;
+    color: #64d6ef;
 }
 a:visited {
-    color: #37474F;
+    color: #ae81ff;
 }
 
 @media (max-width: 500px) {
     .tab {
-        width: 1em;
+        width: 1.25em;
     }
 }
