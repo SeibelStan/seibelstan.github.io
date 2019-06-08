@@ -1,12 +1,15 @@
 /* https://materialuicolors.co */
 body {
     background: #272822;
-    color: #fffffb;
     font-family: monospace;
     font-size: 15px;
 }
+body, .comma, .quot {
+    color: #fffffb;
+}
 .line {
     display: flex;
+    max-width: 42rem;
 }
 .valblock {
     display: inline-flex;
@@ -26,9 +29,6 @@ body {
 }
 .comma {
     margin-right: .25em;
-}
-.comma, .quot {
-    color: #fffffb;
 }
 
 a:link {
