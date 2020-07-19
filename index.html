@@ -25,12 +25,12 @@
         "lastname": "Seibel",
         "location": "Kazakhstan",
         "specialty": "Web Developer",
-        "bio": "Programming since 2008, in web development since 2013. Specialize in backend and business logic."
+        "bio": "Programming since 2008, in web development since 2012. Specialize in backend and business logic."
     },
     "contacts": {
         "emails": [
-            "seibel.stan@yandex.com"
-            "seibel.stan@gmail.com",
+            "seibel.stan@yandex.com",
+            "seibel.stan@gmail.com"
         ],
         "telegram": "https://t.me/SeibelStan",
         "github": "https://github.com/SeibelStan",
@@ -38,50 +38,37 @@
     },
     "skills": {
         "backend": [
-            "PHP7 MVC/OOP", "MySQL", "REST-api", "Laravel", "Codeigniter"
+            "PHP7 MVC/OOP", "MySQL", "REST-API", "Laravel"
         ],
         "frontend": [
             "HTML5", "CSS3", "JavaScript", "jQuery", "Vue.js", "Bootstrap"
         ],
-        "cms": [
-            "Opencart", "Wordpress"
-        ],
         "other": [
-            "Yandex Maps/Geoip", "amoCRM", "Comagic", "Sumsub KYC", "Telegram Bot API", "Payment systems", "Linux, VPS, VDS", "Git", "Project management"
+            "CloudPayments", "ePay KKB", "Yandex Maps/Geoip", "amoCRM", "Comagic", "Sumsub KYC", "Telegram Bot API", "Linux, VPS, VDS", "Git"
         ]
     },
     "projects": {
         "opensource": [
-            "https://github.com/SeibelStan/mdlcms",
+            "https://github.com/SeibelStan",
             "https://seibelstan.github.io/pass"
         ],
-        "live": [
-            "https://pik-arenda.ru",
-            "https://mytenge.kz",
+        "friends": [
+            "https://pik.rent",
             "https://ktrade.kz",
-            "https://ktradestore.com",
-            "http://ndstroy.kz/",
-            "https://msk-exchange.ru",
             "https://coins-trade.ru",
-            "http://danceimage.ru",
+            "https://msk-exchange.ru",
+            "https://domlustr.kz",
+            "https://mytenge.kz"
+        ],
+        "com": [
             "https://helperia.ru",
-            "http://lancronix.ru",
-            "https://hotspotshield.com/global",
-            "https://izishop.ru",
-            "https://innir.ru",
-            "http://imbiber.co",
+            "https://radiobrand.fm",
+            "https://avline.kz",
             "https://kraftmetiz.kz",
-            "http://new24.kz",
-            "http://mobiliner.kz",
-            "http://itaka.kz",
-            "http://elitestyle.kz",
-            "http://radiobrand.fm",
-            "http://kupionline.kz",
-            "http://temirlife.kz",
-            "http://avline.kz"
+            "http://mobiliner.kz"
         ]
     },
-    "lastmodified": "2019-12-04"
+    "lastmodified": "2020-07-19"
 }
 </pre>
 
@@ -94,8 +81,7 @@
         .replace(/"(.+?)":/g, '<span class=key><span class=quot>&quot;</span>$1<span class=quot>&quot;</span>:&nbsp;</span>')
         .replace(/"(.+?)"(,*)/g, '<span class=value><span class=quot>&quot;</span>$1<span class=quot>&quot;</span>$2</span>')
         .replace(/>,/g, '><span class=comma>,</span>')
-        .replace(/ {4}/g, '<span class=tab></span>')
-
+        .replace(/ {4}/g, '<span class=tab></span>');
 </script>
 
 </html>
