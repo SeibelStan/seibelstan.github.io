@@ -48,6 +48,15 @@ function recurText(obj, key = '', lvl = 0, result) {
             node.appendChild(a);
         }
         else {
+            if (key.match(/age/)) {
+                var diff = Math.floor((new Date()).getTime() - (new Date(obj)).getTime());
+                var years = Math.floor(diff / 31536000 / 1000);
+                obj = years.toString();
+            }
+            if (obj.match(/\d{4}-\d\d-\d\d/)) {
+                obj = (new Date(obj)).toLocaleDateString();
+            }
+
             node.innerHTML = obj;
         }
 
