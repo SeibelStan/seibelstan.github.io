@@ -3,14 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="yandex-verification" content="4996532c7f469020">
-    <meta name="google-site-verification" content="Ml1C9jgjs9k8cPOmODpHVQ4cvDyREG8FWDpP5gD7WkQ">
-    <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://seibelstan.github.io">
     <meta property="og:title" content="Stanislaus Seibel">
     <meta property="og:image" content="https://seibelstan.github.io/assets/ava-main.png">
     <meta property="og:type" content="profile">
-    <link rel="stylesheet" href="assets/home.css">
+    <link id="css" rel="stylesheet" href="assets/text.css">
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <meta name="description" content="Web Developer, Kazakhstan">
     <title>Stanislaus Seibel</title>
@@ -18,7 +15,7 @@
 
 <body>
 
-<pre>
+<pre id="json">
 {
     "person": {
         "firstname": "Stanislaus",
@@ -44,7 +41,7 @@
             "HTML5", "CSS3", "JavaScript", "jQuery", "Vue.js", "Bootstrap"
         ],
         "other": [
-            "CloudPayments", "ePay KKB", "Yandex Maps/Geoip", "amoCRM", "Comagic", "Sumsub KYC", "Telegram Bot API", "Linux, VPS, VDS", "Git"
+            "Git", "Linux, VPS, VDS", "Telegram Bot API", "CloudPayments", "ePay KKB", "Yandex Maps/Geoip", "amoCRM", "Comagic", "Sumsub KYC"
         ]
     },
     "projects": {
@@ -72,16 +69,14 @@
 }
 </pre>
 
-<script>
-    document.body.innerHTML = document.body.innerHTML
-        .replace(/<*pre>/g, '')
-        .replace(/^(\s+)(".+?", .+?")$/gm, '$1<div class=valblock>$2</div>')
-        .replace(/^(.+?)$/gm, '<div class=line>$1</div>')
-        .replace(/"(http.+?)*([\.\/]\/.+?)"/g, '"<a href=$1$2>$1$2</a>"')
-        .replace(/"(.+?)":/g, '<span class=key><span class=quot>&quot;</span>$1<span class=quot>&quot;</span>:&nbsp;</span>')
-        .replace(/"(.+?)"(,*)/g, '<span class=value><span class=quot>&quot;</span>$1<span class=quot>&quot;</span>$2</span>')
-        .replace(/>,/g, '><span class=comma>,</span>')
-        .replace(/ {4}/g, '<span class=tab></span>');
-</script>
+<main id="main"></main>
 
+<footer>
+    <a href="#json">json</a>
+    <a href="#text">text</a>
+</footer>
+
+<script src="assets/index.js"></script>
+
+</body>
 </html>

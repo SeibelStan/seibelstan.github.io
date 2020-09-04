@@ -38,6 +38,10 @@ a:visited {
     color: #ae81ff;
 }
 
+footer {
+    margin-top: 2rem;
+}
+
 @media (max-width: 500px) {
     .tab {
         width: 1.25em;

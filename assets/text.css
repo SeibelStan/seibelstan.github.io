@@ -1,0 +1,38 @@
+:root {
+    --padd: 1rem;
+    --hs: 0.9rem;
+}
+
+[data-lvl="2"] {
+    margin-left: calc(1 * var(--padd));
+}
+[data-lvl="3"] {
+    margin-left: calc(2 * var(--padd));
+}
+[data-lvl="4"] {
+    margin-left: calc(3 * var(--padd));
+}
+
+h1 { font-size: calc(2 * var(--hs)); }
+h2 { font-size: calc(1.5 * var(--hs)); }
+h3 { font-size: calc(1.25 * var(--hs)); }
+h4 { font-size: calc(1 * var(--hs)); }
+
+h1, h2, h3, h4, ul {
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul {
+    margin-bottom: .5rem;
+}
+
+footer {
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 500px) {
+    .tab {
+        width: 1.25em;
+    }
+}
