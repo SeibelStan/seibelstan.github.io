@@ -1,17 +1,14 @@
 BEGIN:VCARD
 FN:Stanislaus Seibel
-N:Seibel;Stanislaus;Dmitrievich
+N:Seibel;Stanislav;Dmitrievich
 NICKNAME:SeibelStan
 EMAIL:seibel.stan@yandex.com
-
 ADR;TYPE=HOME:;;;Kazakhstan;Temirtau;101400;Qaraghandy Region
 TEL;TYPE=HOME:+77089018149
-URL;TYPE=HOME:https://seibelstan.github.com
-
+URL;TYPE=HOME:seibelstan.github.com
 ORG:Pik-Arenda
 TITLE:Web Developer
 TEL;TYPE=WORK:+77089018149
-URL;TYPE=WORK:https://pik.rent
-
+URL;TYPE=WORK:pik.rent
 NOTE:Telegram: @SeibelStan
 END:VCARD
