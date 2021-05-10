@@ -4,11 +4,7 @@ N:Seibel;Stanislav;Dmitrievich
 NICKNAME:SeibelStan
 EMAIL:seibel.stan@yandex.com
 ADR;TYPE=HOME:;;;Kazakhstan;Temirtau;101400;Qaraghandy Region
-TEL;TYPE=HOME:+77089018149
-URL;TYPE=HOME:seibelstan.github.com
-ORG:Pik-Arenda
-TITLE:Web Developer
 TEL;TYPE=WORK:+77089018149
-URL;TYPE=WORK:pik.rent
-NOTE:Telegram: @SeibelStan
+URL;TYPE=WORK:seibelstan.github.com
+TITLE:Web Developer
 END:VCARD
