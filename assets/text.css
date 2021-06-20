@@ -7,10 +7,10 @@
     margin-left: calc(1 * var(--padd));
 }
 [data-lvl="3"] {
-    margin-left: calc(2 * var(--padd));
+    margin-left: calc(1 * var(--padd));
 }
 [data-lvl="4"] {
-    margin-left: calc(3 * var(--padd));
+    margin-left: calc(1 * var(--padd));
 }
 
 h1 { font-size: calc(2 * var(--hs)); }
