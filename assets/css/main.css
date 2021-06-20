@@ -40,18 +40,19 @@ main {
     padding: 1.5rem 0;
 }
 
+main, header nav {
+    max-width: 40em;
+    margin: 0 auto;
+}
+
 header nav {
     font-family: var(--ff2);
     display: flex;
     text-transform: uppercase;
 }
 header nav a {
-    margin-right: 1rem;
-}
-
-main, header nav {
-    max-width: 40em;
-    margin: 0 auto;
+    margin-right: 1em;
+    padding: 1rem 0;
 }
 
 p img {
