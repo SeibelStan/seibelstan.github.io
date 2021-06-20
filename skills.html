@@ -1,0 +1,14 @@
+---
+layout: default
+title: Skills
+---
+
+<h2>{{ page.title }}</h2>
+{% for unit in site.data.profile.skills %}
+    <h3>{{ unit[0] | capitalize }}</h3>
+    <ul>
+    {% for subunit in unit[1] %}
+        <li>{{ subunit }}</li>
+    {% endfor %}
+    </ul>
+{% endfor %}

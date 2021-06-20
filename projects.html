@@ -1,0 +1,18 @@
+---
+layout: default
+title: Projects
+---
+
+<h2>{{ page.title }}</h2>
+{% for unit in site.data.profile.projects %}
+    <h3>{{ unit[0] | capitalize }}</h3>
+    <ul>
+    {% for subunit in unit[1] %}
+        {% if subunit contains "http" %}
+            <li><a target="_blank" href="{{ subunit }}">{{ subunit }}</a></li>
+        {% else %}
+            <li>{{ subunit }}</li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+{% endfor %}

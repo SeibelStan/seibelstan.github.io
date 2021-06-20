@@ -1,0 +1,63 @@
+{
+    "qr": "assets/img/qr.png",
+    "contacts": {
+        "telegram": "https://t.me/SeibelStan",
+        "email": "seibel.stan@yandex.com",
+        "email2": "seibel.stan@gmail.com",
+        "github": "https://github.com/SeibelStan",
+        "linkedin": "https://linkedin.com/in/stanislaus-seibel-aa643a215",
+        "vcard": "assets/seibelstan.vcf"
+    },
+    "person": {
+        "name": "Stanislaus Seibel",
+        "age": "28",
+        "location": "Kazakhstan, Temirtau",
+        "specialty": "Web Developer, Programming instructor",
+        "bio": "Programming since 2008, in web development since 2012. Specialize in backend and business logic, API and payment systems"
+    },
+    "skills": {
+        "backend": [
+            "PHP8 MVC/OOP", "MySQL", "REST-API", "Laravel"
+        ],
+        "frontend": [
+            "HTML5", "CSS3", "JavaScript", "jQuery", "Vue.js", "Bootstrap"
+        ],
+        "payments": [
+            "CloudPayments", "ePay KKB", "Free-Kassa", "Interkassa", "Unitpay", "Enot.io", "Digiseller"
+        ],
+        "other": [
+            "Git", "Linux", "Telegram Bot API", "Yandex Maps/GeoIP", "amoCRM", "Comagic", "Sumsub KYC", "Google Authenticator", "Jekyll"
+        ]
+    },
+    "projects": {
+        "friends": [
+            "https://ktrade.kz",
+            "https://domlustr.kz",
+            "https://coins-trade.ru",
+            "https://msk-exchange.ru",
+            "https://thefinancier.ru",
+            "https://mytenge.kz"
+        ],
+        "com": [
+            "Crypto-exchanger via Tele2.ru",
+            "https://pik.rent",
+            "https://helperia.ru",
+            "https://rbmusic.ru",
+            "https://avline.kz",
+            "https://kraftmetiz.kz",
+            "https://mobiliner.kz"
+        ],
+        "my": [
+            "https://musicrails.club",
+            "https://datapack.org/"
+        ],
+        "trash": [
+            "https://sticker-zone.ru",
+            "https://proxy-bypass.ru",
+            "https://insta-case.ru",
+            "https://sofa-clean.ru",
+            "https://apexin.ru"
+        ]
+    },
+    "lastmodified": "2021-06-21"
+}

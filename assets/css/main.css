@@ -1,0 +1,60 @@
+:root {
+    --padd: 1rem;
+    --hs: 0.9rem;
+    --ff1: serif;
+    --ff2: Arial, Helvetica, sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    font-family: var(--ff1);
+}
+
+h1 { font-size: calc(2 * var(--hs)); }
+h2 { font-size: calc(1.5 * var(--hs)); }
+h3 { font-size: calc(1.25 * var(--hs)); }
+h4 { font-size: calc(1 * var(--hs)); }
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+    font-family: var(--ff2);
+}
+h1 {
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4, ul {
+    margin: 0 0 .5em;
+}
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child),
+h4:not(:first-child) {
+    margin-top: 1em;
+}
+ul, p {
+    margin: 0 0 .5em;
+}
+
+main {
+    padding: 1.5rem 0;
+}
+
+header nav {
+    font-family: var(--ff2);
+    display: flex;
+    text-transform: uppercase;
+}
+header nav a {
+    margin-right: 1rem;
+}
+
+main, header nav {
+    max-width: 40em;
+    margin: 0 auto;
+}
+
+p img {
+    display: block;
+    margin: 0 auto;
+}

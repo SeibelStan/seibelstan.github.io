@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:image" content="/assets/img/ava-main.png">
+    <meta property="og:type" content="profile">
+    <meta property="og:updated_time" content="{{ site.data.profile.lastmodified }}">
+    <link id="css" rel="stylesheet" href="/assets/css/main.css">
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <meta name="description" content="Web Developer, Kazakhstan">
+    <title>{{ page.title }} &bull; Stanislaus Seibel</title>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="/">Contacts</a>
+        <a href="/skills">Skills</a>
+        <a href="/projects">Projects</a>
+        <a href="/blog">Blog</a>
+        <a href="/pass">Pass</a>
+    </nav>
+</header>
+
+<main>
+    {{ content }}
+</main>
+
+</body>
+</html>
