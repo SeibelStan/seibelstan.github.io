@@ -6,6 +6,8 @@
 }
 
 body {
+    margin: 0;
+    padding: 1rem;
     line-height: 1.5;
     font-family: var(--ff1);
 }
@@ -48,11 +50,12 @@ main, header nav {
 header nav {
     font-family: var(--ff2);
     display: flex;
+    flex-wrap: wrap;
     text-transform: uppercase;
 }
 header nav a {
     margin-right: 1em;
-    padding: 1rem 0;
+    padding: .25em 0;
 }
 
 p img {
