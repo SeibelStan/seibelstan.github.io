@@ -14,6 +14,7 @@
         "age": "28",
         "location": "Kazakhstan, Temirtau",
         "specialty": "Web Developer, Programming instructor",
+        "description": "Web Developer, Kazakhstan",
         "bio": "Programming since 2008, in web development since 2012. Specialize in backend and business logic, API and payment systems"
     },
     "skills": {
@@ -60,5 +61,5 @@
             "https://apexin.ru"
         ]
     },
-    "lastmodified": "2021-06-21"
+    "lastmodified": "2021-07-04"
 }

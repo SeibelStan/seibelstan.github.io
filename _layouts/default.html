@@ -11,7 +11,8 @@
     <meta property="og:updated_time" content="{{ site.data.profile.lastmodified }}">
     <link id="css" rel="stylesheet" href="/assets/css/main.css">
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
-    <meta name="description" content="Web Developer, Kazakhstan">
+    <meta name="description" content="{{ site.data.profile.person.description }}">
+    <meta name="og:description" content="{{ site.data.profile.person.description }}">
     <title>{{ page.title }} &bull; Stanislaus Seibel</title>
 </head>
 
@@ -22,7 +23,6 @@
         <a href="/">Contacts</a>
         <a href="/skills">Skills</a>
         <a href="/projects">Projects</a>
-        <a href="/blog">Blog</a>
         <a href="/pass">Pass</a>
     </nav>
 </header>
