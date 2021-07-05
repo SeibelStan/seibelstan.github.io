@@ -34,23 +34,23 @@
     "projects": {
         "friends": [
             "https://ktrade.kz",
+            "https://mateshop.kz",
+            "https://rbmusic.ru",
             "https://domlustr.kz",
             "https://coins-trade.ru",
-            "https://msk-exchange.ru",
-            "https://thefinancier.ru",
-            "https://mytenge.kz"
+            "https://mytenge.kz",
+            "https://thefinancier.ru"
         ],
         "com": [
-            "https://mateshop.kz",
             "Private Crypto-exchanger",
             "https://pik.rent",
+            "https://msk-exchange.ru",
             "https://helperia.ru",
-            "https://rbmusic.ru",
             "https://avline.kz",
             "https://kraftmetiz.kz",
             "https://mobiliner.kz"
         ],
-        "my": [
+        "draft": [
             "https://musicrails.club",
             "https://datapack.org/"
         ],
