@@ -28,7 +28,7 @@
             "CloudPayments", "ePay KKB", "Free-Kassa", "Interkassa", "Unitpay", "Enot.io", "Digiseller"
         ],
         "other": [
-            "Git", "Linux", "Telegram Bot API", "Yandex Maps/GeoIP", "amoCRM", "Comagic", "Sumsub KYC", "Google Authenticator", "Jekyll"
+            "Linux", "Git", "Telegram Bot API", "Yandex Maps/GeoIP", "amoCRM", "Comagic", "Sumsub KYC", "Google Authenticator", "Jekyll"
         ]
     },
     "projects": {
@@ -41,7 +41,8 @@
             "https://mytenge.kz"
         ],
         "com": [
-            "Crypto-exchanger via Tele2.ru",
+            "https://mateshop.kz",
+            "Private Crypto-exchanger",
             "https://pik.rent",
             "https://helperia.ru",
             "https://rbmusic.ru",
@@ -61,5 +62,5 @@
             "https://apexin.ru"
         ]
     },
-    "lastmodified": "2021-07-04"
+    "lastmodified": "2021-07-06"
 }
