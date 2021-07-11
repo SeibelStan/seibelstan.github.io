@@ -1,15 +1,14 @@
 :root {
     --padd: 1rem;
     --hs: 0.9rem;
-    --ff1: serif;
-    --ff2: Arial, Helvetica, sans-serif;
+    --ff: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 body {
     margin: 0;
     padding: 1rem;
     line-height: 1.5;
-    font-family: var(--ff1);
+    font-family: var(--ff);
 }
 
 h1 { font-size: calc(2 * var(--hs)); }
@@ -19,7 +18,6 @@ h4 { font-size: calc(1 * var(--hs)); }
 
 h1, h2, h3, h4 {
     font-weight: normal;
-    font-family: var(--ff2);
 }
 h1 {
     text-transform: uppercase;
@@ -48,7 +46,6 @@ main, header nav {
 }
 
 header nav {
-    font-family: var(--ff2);
     display: flex;
     flex-wrap: wrap;
     text-transform: uppercase;
